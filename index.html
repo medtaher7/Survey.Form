@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>    
+	   <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	   <title>freeCodeCamp Survey Form</title>
+	   <link rel="stylesheet" href="./styles.css">
+    </head>
+		<body>			
+            <h1 id="title">Nature Lovers Survey Form</h1>
+            <p id="description">
+				Thank you for taking the time to help us improve the platform
+			</p>
+			<form class="servy" id="survey-form" >
+				<label id="name-label">Full Name
+				  <input id="name" type="text" placeholder="Enter your name" required />
+				</label>
+			    <label id="email-label">Email
+			  	  <input type="email" placeholder="Enter your email" id="email" required />
+		    	</label>
+				<label id="number-label">Age(optional)
+				  <input type="number" id="number" min="10" max="99" placeholder="Age" />
+				</label>
+				<p>What is the best season for camping?</p>
+				<select id="dropdown">
+                    <option>
+						winter
+					</option>
+					<option>	
+						summer		
+					</option>
+				</select>
+				<fieldset>
+				   <p>Would you like to leave behind your life in the city, along with your friends, and instead choose to live in an unknown forest, on an island, or in any location surrounded by nature? Picture a place where the air is clean, animals roam freely, and a sense of tranquility prevails.</p>
+		  		<div class="radio-group">
+				   <label for="op1"><input in="op1" name="options" type="radio" class="inline" value="definitely"/>Definitely</label>
+                   <label for="op2"><input in="op2" name="options" type="radio" class="inline" value="maybe" />Maybe</label>
+				   <label for="op3"><input in="op3" name="options" type="radio" class="inline" value="not sure" />Not Sure</label>
+				</div>
+			    </fieldset>
+				<fieldset>
+                <div class="checkbox">
+					<label for="imprv" class="inline">what do you preferr:
+					<input id="imprv" value="imprv1" type="checkbox" class="inline"/>
+					mountain
+					<input id="imprv" value="imprv1" type="checkbox" class="inline" />
+					forrest
+					<input id="imprv" value="imprv1" type="checkbox" class="inline" />
+					island
+						</label>
+			      </div>
+				</fieldset>
+				  <fieldset>
+				<label for="story" >share us a crazy story about your last camping jorney: <textarea id="story" placeholder="During my last trip to South Africa I had a ride on elephant!"></textarea></label>
+			    </fieldset>
+				<fieldset>
+					<input type="submit" id="submit"	name="submit" />
+                </fieldset>
+			</form>
+		</body>
+  </html>
